@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961820728681",
+    "project_id": "wheaton-market",
+    "storage_bucket": "wheaton-market.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961820728681:android:2ff7629b724371491871f8",
+        "android_client_info": {
+          "package_name": "com.example.wheaton_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzPLWZPXED_sBoixbRrrIzfbMwlB6oNsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/acc_edit_outer_linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <TextView
+            android:id="@+id/acc_edit_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit account"
+            android:textSize="25sp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/icon"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="83dp"-->
+<!--            tools:srcCompat="@drawable/icon" />-->
+
+        <LinearLayout
+            android:id="@+id/acc_edit_change_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40dp">
+
+            <TextView
+                android:id="@+id/acc_edit_change_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:text="Change image"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/acc_edit_change_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0"
+                android:text="Change image"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/acc_edit_first_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/acc_edit_last_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last name"
+            android:inputType="text" />
+
+
+
+        <EditText
+            android:id="@+id/acc_edit_id_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="WID number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="#87CEFA"
+            android:text="Change Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameTextView" />
+
+        <EditText
+            android:id="@+id/currentPasswordEditText"
+            android:layout_width="198dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Current Password"
+            android:inputType="textPassword"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changePasswordButton" />
+
+        <EditText
+            android:id="@+id/newPasswordEditText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentPasswordEditText" /> <!-- Light blue background color for button -->
+        <Button
+            android:id="@+id/save"
+            android:layout_width="135dp"
+            android:layout_height="49dp"
+            android:text="Save" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/acc_edit_inner_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <Button
+                android:id="@+id/acc_edit_save_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save changes" />
+
+            <Button
+                android:id="@+id/acc_edit_cancel_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

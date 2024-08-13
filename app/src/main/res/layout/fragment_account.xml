@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment">
+
+    <LinearLayout
+        android:id="@+id/account_outer_linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/account_log_texTView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logged in as: user name"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/account_user_imageView"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@drawable/circular_image_background" />
+
+        <TextView
+            android:id="@+id/account_first_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:text="First name: user first name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/account_last_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Last name: user last name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/account_email_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Email: email"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/account_id_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="WID: wheaton id number"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/account_inner_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <Button
+                android:id="@+id/account_change_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit account" />
+
+            <Button
+                android:id="@+id/account_contact_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact us" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_bottom_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40dp">
+
+            <TextView
+                android:id="@+id/account_empty_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/account_logout_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="logout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
